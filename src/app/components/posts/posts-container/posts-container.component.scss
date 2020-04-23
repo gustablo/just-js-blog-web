@@ -11,6 +11,8 @@
 
         &:hover {
             cursor: pointer;
+            color: #3f51b5;
+            transition: ease-in .2s;
         }
     }
 
@@ -22,6 +24,8 @@
 
         &:hover {
             cursor: pointer;
+            color: #3f51b5;
+            transition: ease-in .2s;
         }
     }
 
@@ -37,6 +41,8 @@
             &:hover {
                 text-decoration: underline;
                 cursor: pointer;
+                color: #3f51b5;
+                transition: ease-in .1s;
             }
         }
     }

@@ -1,0 +1,33 @@
+.toolbar-component {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background-color: transparent;
+    z-index: 2;
+
+    .toolbar-logo {
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-left: 6em;
+        text-transform: none;
+    }
+
+    mat-list {
+        padding-top: 0;
+    }
+
+    button {
+        color: white;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    mat-list-item {
+        &:last-child {
+            margin-right: 8em;
+        }
+    }
+}

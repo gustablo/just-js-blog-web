@@ -1,0 +1,33 @@
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.footer-component {
+    width: 100vw;
+    height: 32vh;
+    text-align: center;
+
+    mat-icon {
+        font-size: 45px;
+
+        &:hover {
+            cursor: pointer;
+            transition: ease-in .2s;
+            color: #0085a1;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #6c757d!important;
+        line-height: 1.5;
+        margin: 30px 0;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+}

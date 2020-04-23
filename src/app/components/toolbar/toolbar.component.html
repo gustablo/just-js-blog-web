@@ -1,0 +1,18 @@
+<mat-toolbar class="toolbar-component"> <!-- [ngStyle]="{ 'display': scrolledTop ? 'flex' : 'none' }" -->
+    <div fxHide.gt-xs>
+        <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div >
+        <button mat-button fxShow.gt-sm="true"  fxShow="false" class="toolbar-logo">One Post</button>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <mat-list fxLayout="row">
+            <mat-list-item> <button mat-button>Home</button> </mat-list-item>
+            <mat-list-item> <button mat-button>About</button> </mat-list-item>
+            <mat-list-item> <button mat-button>Samle Post</button> </mat-list-item>
+            <mat-list-item> <button mat-button>Contact</button> </mat-list-item>
+        </mat-list>
+    </div>
+</mat-toolbar>

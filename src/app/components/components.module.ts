@@ -9,24 +9,27 @@ import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { PostsModule } from './posts/posts.module';
+import { MarkdownComponent } from './markdown/markdown.component';
 
 @NgModule({
   declarations: [
     ToolbarComponent,
     BannerComponent,
     FooterComponent,
+    MarkdownComponent,
   ],
   imports: [
     CommonModule,
     MaterialSharedModule,
     FlexLayoutSharedModule,
-    PostsModule
+    PostsModule,
   ],
   exports: [
     ToolbarComponent,
     BannerComponent,
     PostsModule,
     FooterComponent,
+    MarkdownComponent,
   ]
 })
 export class ComponentsModule { }

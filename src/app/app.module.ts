@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialSharedModule } from './shared/material.module';
 import { FlexLayoutSharedModule } from './shared/flex-layout.module';
 import { ComponentsModule } from './components/components.module';
-import { PagesModule } from './pages/pages.module';
+// import { PagesModule } from './pages/pages.module';
 
 
 @NgModule({
@@ -22,7 +22,7 @@ import { PagesModule } from './pages/pages.module';
     MaterialSharedModule,
     FlexLayoutSharedModule,
     ComponentsModule,
-    PagesModule
+    // PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

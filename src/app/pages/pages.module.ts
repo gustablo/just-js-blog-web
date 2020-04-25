@@ -8,15 +8,12 @@ import { MaterialSharedModule } from '../shared/material.module';
 import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [],
   imports: [
     CommonModule,
     FlexLayoutSharedModule,
     MaterialSharedModule,
     ComponentsModule
-  ],
-  exports: [
-    HomeComponent
   ]
 })
 export class PagesModule { }

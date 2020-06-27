@@ -1,14 +1,13 @@
 <div class="posts-container-component" fxLayoutAlign="center center" fxLayoutAlign.gt-sm="start" fxLayout="column" (click)="navigateToPublication()">
 
     <h2 class="post-title">
-        Man must explore, and this is exploration at its greatest
+        {{ post.title }}
     </h2>
 
-    <h3 class="post-subtitle">Problems
-        look mighty small from 150 miles up</h3>
+    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
 
-    <p class="post-infos">Posted by <b>Start Bootstrap</b> on
-        September 24, 2019</p>
+    <p class="post-infos">Posted by <b>Gustavo Pinheiro</b> on
+        {{ post.createdAt | date:'dd/MM/yyyy' }}</p>
 </div>
 
 <mat-divider></mat-divider>

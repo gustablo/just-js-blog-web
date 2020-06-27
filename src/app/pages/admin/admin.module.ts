@@ -1,26 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HomeComponent } from './home.component';
-
 import { FlexLayoutSharedModule } from '../../shared/flex-layout.module';
 import { MaterialSharedModule } from '../../shared/material.module';
 import { ComponentsModule } from '../../components/components.module';
-import { HomeRoutingModule } from './home-routing.module';
+import { AdminRoutingModule } from './admin-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminComponent } from './admin.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [
+    AdminComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutSharedModule,
     MaterialSharedModule,
-    HomeRoutingModule,
+    AdminRoutingModule,
+    HttpClientModule,
     ComponentsModule,
-    HttpClientModule
   ]
 })
-export class HomeModule { }
+export class AdminModule { }

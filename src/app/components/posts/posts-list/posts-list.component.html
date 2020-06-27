@@ -1,8 +1,5 @@
 <div fxLayout="column" fxFlex="100%" fxFlex.gt-sm="45%" fxLayoutAlign="center center">
-    <app-posts-container></app-posts-container>
-    <app-posts-container></app-posts-container>
-    <app-posts-container></app-posts-container>
-    <app-posts-container></app-posts-container>
+    <app-posts-container *ngFor="let post of posts" [post]="post"></app-posts-container>
 
     <mat-paginator fxLayoutAlign="end end" [length]="100" [pageSize]="10">
     </mat-paginator>

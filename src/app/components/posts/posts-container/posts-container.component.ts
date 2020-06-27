@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class PostsContainerComponent implements OnInit {
 
+  @Input() post: any;
   constructor(
     private router: Router
   ) { }
@@ -16,7 +17,7 @@ export class PostsContainerComponent implements OnInit {
   }
 
   navigateToPublication() {
-    this.router.navigate(['publication/titulo']);
+    this.router.navigate(['publication', this.post.title]);
   }
 
 }

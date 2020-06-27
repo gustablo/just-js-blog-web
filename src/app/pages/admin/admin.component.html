@@ -1,0 +1,17 @@
+<input [(ngModel)]="title" /> <br />
+<input [(ngModel)]="subtitle" /> <br />
+
+
+<textarea [(ngModel)]="md"></textarea>
+
+<button (click)="createPost()">POSTAR</button>
+
+<br />
+
+<h1>{{ title }}</h1>
+
+<h3>{{ subtitle }}</h3>
+
+<div style="width:100%" fxLayoutAlign="center" class="publication-container">
+    <app-markdown style="width: 50%" [text]=md></app-markdown>
+</div>

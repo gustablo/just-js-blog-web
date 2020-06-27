@@ -7,7 +7,6 @@ import { ComponentsModule } from '../../components/components.module';
 import { PublicationRoutingModule } from './publication-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PublicationComponent } from './publication.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({

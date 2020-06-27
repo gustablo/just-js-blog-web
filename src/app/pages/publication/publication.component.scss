@@ -7,3 +7,14 @@ h1 {
     color: rgba(0, 0, 0, 0.84) !important;
     font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif !important;
 }
+
+.markdown-container-post {
+    width: 50%
+}
+
+@media screen and (max-width: 800px) {
+    .markdown-container-post { 
+        width: 85%;
+    }
+}
+  

@@ -21,7 +21,7 @@ export class PublicationComponent implements OnInit {
 
     const title = this.activatedRoute.snapshot.params.title;
 
-    this.http.get('https://one-post-api.herokuapp.com/posts/' + title).subscribe((res: any) => {
+    this.http.get('https://just-js-blog.herokuapp.com/posts/' + title).subscribe((res: any) => {
       this.md = res.text;
       this.title = res.title;
     });

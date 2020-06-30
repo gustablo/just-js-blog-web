@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.http.get('https://one-post-api.herokuapp.com/posts').subscribe(posts => {
+    this.http.get('https://just-js-blog.herokuapp.com/posts').subscribe(posts => {
       this.posts = posts;
     });
   }

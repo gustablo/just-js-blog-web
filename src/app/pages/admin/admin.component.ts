@@ -29,7 +29,7 @@ export class AdminComponent implements OnInit {
 
     const bearer = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdwQGdtYWlsLmNvbSIsInN1YiI6IjVlYTIzYTAyNGZlYzM1NzFjMGZlMThhZSIsImlhdCI6MTU5MzI5MTM0OCwiZXhwIjoxNTkzMzc3NzQ4fQ.52SE3cy_I72rgOPIHTwTc6N0hkvP0C8P_vA2GvkuOXQ'
   
-    this.http.post('https://one-post-api.herokuapp.com/posts', data, { headers: { Authorization: bearer } }).subscribe(res => {
+    this.http.post('https://just-js-blog.herokuapp.com/posts', data, { headers: { Authorization: bearer } }).subscribe(res => {
 
     });
   }
